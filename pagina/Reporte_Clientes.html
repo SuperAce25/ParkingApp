@@ -30,27 +30,35 @@
         </ul>
 
         <div id="contenido">
-            <h1>Registrar Empleados</h1>
+            <h1>Reporte de Clientes Nuevos</h1>
             <form action="/action_page.php">
-              <label for="Nombre">Nombre</label>
-              <input type="text" id="Nombre" name="Nombre" placeholder="Nombre del empleado">
-          
-              <label for="IDEmpleado">Identificación</label>
-              <input type="text" id="IDEmpleado" name="IDEmpleado" placeholder="Identificacion del empleado">
+              <label for="Mes ">Mes</label>
+              <select id="Mes" name="Mes">
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+              </select>
 
-              <label for="email">Correo Electrónico</label>
-              <input type="text" id="email" name="email" placeholder="Correo Electrónico">
+              <label for="Año">Año</label>
+              <input type="text" id="Año" name="Año" placeholder="Año">
 
-              <label for="Contraseña">Contraseña</label>
-              <input type="text" id="Contraseña" name="Contraseña" placeholder="Contraseña">
-
-              <label for="Conf_Contraseña">Confirmación de Contraseña</label>
-              <input type="text" id="Conf_Contraseña" name="Conf_Contraseña" placeholder="Confirme la Contraseña">
+              <input type="submit" value="Generar">
 
 
-              <input type="submit" value="Submit">
+              
             </form>
         </div>
+
+
 
     </body>
 
