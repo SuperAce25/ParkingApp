@@ -1,0 +1,71 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <script src="scripts/fechayhora.js"></script>
+        
+        <div id="cabecera">
+
+            <h1>ParkingApp</h1>
+        </div>
+        <ul>
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="Registro_cliente.html">Registro clientes</a></li>
+            <li><a href="Registro_vehiculo.html">Registro vehiculos</a></li>
+            <li><a href="Balance_Mensual.html">Balance mensual</a></li>
+            <li><a href="Recibo.html">Descargar recibo</a></li>
+            <li><a href="Registro_Empleado.html">Registrar Empleados</a></li>
+        </ul>
+
+        <div id="contenido">
+            <h1>Registro Vehiculos</h1>
+            <form action="/action_page.php">
+
+                <label for="TipoVeh">Tipo de Vehículo</label>
+                <select id="TipoVeh" name="TipoVeh">
+                  <option value="Auto">Automovil</option>
+                  <option value="Moto">Motocicleta</option>
+                </select>
+  
+              <label for="Placa">Placa</label>
+              <input type="text" id="Placa" name="Placa" placeholder="Placa">
+
+              <label for="Marca">Marca</label>
+              <input type="text" id="Marca" name="Marca" placeholder="Marca">
+          
+              <label for="Modelo">Modelo</label>
+              <input type="text" id="Modelo" name="Modelo" placeholder="Modelo">
+          
+              <label for="Usuario">Usuario</label>
+              <input type="text" id="Usuario" name="Usuario" placeholder="Nombre del Usuario">
+
+              <label for="IdUsuario">Numero de Identificación</label>
+              <input type="text" id="IdUsuario" name="IdUsuario" placeholder="Numero de Identificación del Usuario">
+          
+              <label for="TipoID">Tipo de Identificación</label>
+              <select id="TipoID" name="TipoID">
+                <option value="CC">Cedula de Ciudadania</option>
+                <option value="CE">Cedula de Extranjería</option>
+                <option value="PE">Permiso Especial de Permanencia</option>
+                <option value="PA">Pasaporte</option>
+              </select>
+
+              <label for="Ingreso">Ingreso</label>
+              <h4 id="display-fecha"></h4>
+              <h4 id="display-time"></h4>
+
+
+
+          
+            
+              <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </body>
+
+</html>
