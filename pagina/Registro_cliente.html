@@ -35,7 +35,7 @@
             <form action="/action_page.php">
               
               <label for="TipIde">Tipo de Identificación</label>
-              <select id="TipoIde" name="TipoIde">
+              <select id="TipoIde" name="TipoIde" required>
                 <option value="CC">Cedula de Ciudadania</option>
                 <option value="CE">Cedula de Extranjería</option>
                 <option value="PE">Permiso Especial de Permanencia</option>
@@ -43,19 +43,19 @@
               </select>
 
               <label for="IdCliente">Numero de Identificación</label>
-              <input type="text" id="IdCliente" name="IdCliente" placeholder="Numero de Identificación del Usuario">
+              <input type="text" id="IdCliente" name="IdCliente" placeholder="Numero de Identificación del Usuario" required>
           
               <label for="Nombre">Nombre</label>
-              <input type="text" id="Nombre" name="Nombre" placeholder="Nombre del Cliente">
+              <input type="text" id="Nombre" name="Nombre" placeholder="Nombre del Cliente" required>
 
               <label for="Telefono">Teléfono</label>
-              <input type="text" id="Telefono" name="Telefono" placeholder="Numero Telefónico">
+              <input type="text" id="Telefono" name="Telefono" placeholder="Numero Telefónico" required>
 
               <label for="Direccion">Dirección</label>
-              <input type="text" id="Direccion" name="Direccion" placeholder="Dirección">
+              <input type="text" id="Direccion" name="Direccion" placeholder="Dirección" required>
 
               <label for="Email">Correo Electrónico</label>
-              <input type="text" id="Email" name="Email" placeholder="Email">
+              <input type="text" id="Email" name="Email" placeholder="Email" required>
             
 
               <input type="submit" value="Submit">
