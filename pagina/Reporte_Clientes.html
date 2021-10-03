@@ -16,9 +16,6 @@
                     </td>
                 </tr>
             </table>
-
-
-
         </div>
         <ul>
             <li><a class="active" href="index.html">Inicio</a></li>
@@ -31,19 +28,37 @@
             <li><a href="Reporte_Clientes.html">Reporte Clientes</a></li>
 
         </ul>
-        
+
         <div id="contenido">
-            <h4>¿Qué es ParkingApp?</h4>
-            <p>Es la mejor opción para la gestión de parqueaderos; ParkingApp le permite realizar sus funciones cotidianas como el Registro
-                de clientes, ingresos y salidas de vehículos, además de generar facturas y balances, todo al alcance de un click </p>
+            <h1>Reporte de Clientes Nuevos</h1>
+            <form action="/action_page.php">
+              <label for="Mes ">Mes</label>
+              <select id="Mes" name="Mes" required>
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+              </select>
+
+              <label for="Año">Año</label>
+              <input type="text" id="Año" name="Año" placeholder="Año" required>
+
+              <input type="submit" value="Generar">
+
+
+              
+            </form>
         </div>
-        <br>
-        <div id="contenido">
-            <h4>¿Para quien está desarrollado ParkingApp?</h4>
-            <p>Tanto empleados como administradores de parquederos pueden aprovechar las ventajas del desarrollo cómodo y simple que brinda ParkingApp, 
-                y los clientes se sentirán a gusto al contar con una atención más eficiente. ¡Todo lo hacemos para que tu negocio crezca!
-            </p>    
-        </div>
+
+
 
     </body>
 

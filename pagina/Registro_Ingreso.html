@@ -1,15 +1,17 @@
-<!DOCTYPE html>
 <html>
 
     <head>
-        <link rel="icon" href="Imagenes/park.png" type="image/png" />
         <link rel="icon" href="Imagenes/park.png" type="image/png" />
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     </head>
 
     <body>
+
+        <script src="scripts/fechayhora.js"></script>
+        
         <div id="cabecera">
+
             <table>
                 <tr>
                     <td><img src="Imagenes/P.jpg" type="image/png" heigth="120" width="120" alt="Mi Parking"/></td>
@@ -31,33 +33,46 @@
         </ul>
 
         <div id="contenido">
-            <h1>Registrar Clientes</h1>
+            <h1>Registrar Ingreso de Vehículos</h1>
             <form action="/action_page.php">
-              
-              <label for="TipIde">Tipo de Identificación</label>
-              <select id="TipoIde" name="TipoIde" required>
+
+                <label for="TipoVeh">Tipo de Vehículo</label>
+                <select id="TipoVeh" name="TipoVeh" required>
+                  <option value="Auto">Automovil</option>
+                  <option value="Moto">Motocicleta</option>
+                </select>
+  
+              <label for="Placa">Placa</label>
+              <input type="text" id="Placa" name="Placa" placeholder="Placa" required>
+
+              <label for="Marca">Marca</label>
+              <input type="text" id="Marca" name="Marca" placeholder="Marca" required>
+          
+              <label for="Modelo">Modelo</label>
+              <input type="text" id="Modelo" name="Modelo" placeholder="Modelo" required>
+          
+              <label for="Usuario">Usuario</label>
+              <input type="text" id="Usuario" name="Usuario" placeholder="Nombre del Usuario" required>
+
+              <label for="IdUsuario">Numero de Identificación</label>
+              <input type="text" id="IdUsuario" name="IdUsuario" placeholder="Numero de Identificación del Usuario" required>
+          
+              <label for="TipoID">Tipo de Identificación</label>
+              <select id="TipoID" name="TipoID" required>
                 <option value="CC">Cedula de Ciudadania</option>
                 <option value="CE">Cedula de Extranjería</option>
                 <option value="PE">Permiso Especial de Permanencia</option>
                 <option value="PA">Pasaporte</option>
               </select>
 
-              <label for="IdCliente">Numero de Identificación</label>
-              <input type="text" id="IdCliente" name="IdCliente" placeholder="Numero de Identificación del Usuario" required>
+              <label for="Ingreso">Ingreso</label>
+              <h4 id="display-fecha"></h4>
+              <h4 id="display-time"></h4>
+
+
+
           
-              <label for="Nombre">Nombre</label>
-              <input type="text" id="Nombre" name="Nombre" placeholder="Nombre del Cliente" required>
-
-              <label for="Telefono">Teléfono</label>
-              <input type="text" id="Telefono" name="Telefono" placeholder="Numero Telefónico" required>
-
-              <label for="Direccion">Dirección</label>
-              <input type="text" id="Direccion" name="Direccion" placeholder="Dirección" required>
-
-              <label for="Email">Correo Electrónico</label>
-              <input type="text" id="Email" name="Email" placeholder="Email" required>
             
-
               <input type="submit" value="Submit">
             </form>
         </div>
